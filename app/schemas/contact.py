@@ -5,7 +5,7 @@ from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
 class ContactCreate(BaseModel):
-    name: str = Field(..., min_length=2, max_length=80, examples=["Жаслан"])
+    name: str = Field(..., min_length=2, max_length=80, examples=["Иван"])
     phone: str = Field(..., min_length=5, max_length=30, examples=["+7 999 123-45-67"])
     email: EmailStr = Field(..., examples=["client@example.com"])
     comment: str = Field(..., min_length=10, max_length=2000, examples=["Здравствуйте, хочу обсудить разработку backend API."])
