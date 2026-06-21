@@ -32,6 +32,8 @@ cp .env.example .env
 copy .env.example .env
 ```
 
+Теперь необходимо указать Google Gemini API key в .env AI_API_KEY
+
 После этого проект можно запустить через Docker Compose:
 
 ```bash
